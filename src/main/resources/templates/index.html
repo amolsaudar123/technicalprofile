@@ -28,7 +28,7 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-    <!--<link rel="stylesheet" href="../static/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 <div class="content-block" id="header">
@@ -121,12 +121,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 wow animated fadeInLeft">
-                        <form class="contact-form" action="form.php">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <textarea rows="5" name="message" placeholder="Say Something..." required></textarea>
+                        <form class="contact-form" th:action="@{/sendMail}" th:object="${sendmail}" method="post" >
+                            <input type="text" name="name" placeholder="Name" required th:field="*{senderName}">
+                            <input type="email" name="email" placeholder="Email" required th:field="*{senderEmail}">
+                            <textarea rows="5" name="message" placeholder="Say Something..." required th:field="*{message}"></textarea>
                             <input type="submit" value="Submit">
                         </form>
+                        <!--<form class="contact-form" >-->
+                            <!--<input type="text" name="name" placeholder="Name">-->
+                            <!--<input type="email" name="email" placeholder="Email" required>-->
+                            <!--<textarea rows="5" name="message" placeholder="Say Something..." required></textarea>-->
+                            <!--<button type="submit" value="submit">Submit</button>-->
+                           <!--&lt;!&ndash;<input type="submit" value="Submit">&ndash;&gt;-->
+                        <!--</form>-->
                     </div>
                     <div class="col-md-6 wow animated fadeInRight">
                         <div class="row">
