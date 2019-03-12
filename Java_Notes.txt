@@ -1,0 +1,41 @@
+									Buzzwords
+									
+
+	1. Simple:
+				- The syntax for Java is, indeed, a cleaned-up version of C++ syntax.
+				- No need of C++ features like:
+												- header files, 
+												- pointer arithmetic (or even a pointer syntax), 
+												- structures,
+												- unions, 
+												- operator overloading, 
+												- virtual base classes, and so on
+				- Another aspect of being simple is being small:
+												- One of the goals of Java is to enable
+												  the construction of software that can run stand-alone on small
+												  machines.
+				- There is now a separate Java Micro Edition with a smaller library, suitable for embedded devices
+				
+		*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+		
+	2. Object-Oriented:
+				- Simply stated, object-oriented design is a programming technique that focuses on 
+				  the data (= objects) and on the interfaces to that object.
+				- Analogy:
+						- “object-oriented” carpenter:
+													-  would be mostly concerned with the chair he is building,
+													   and secondarily with the tools used to make it;
+						-  “non-object-oriented” carpenter:
+													- would think primarily of his tools
+													
+		*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+											
+	3. Distributed:
+				- Java has an extensive library of routines for coping with TCP/IP protocols like HTTP and FTP
+				- Java applications can open and access objects across the Net via URLs with the same ease as 
+				  when accessing a local file system.
+			
+		*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*
+		
+	4. Robust:
+			    - 
